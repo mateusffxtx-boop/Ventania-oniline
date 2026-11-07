@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ventania-peer
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 9000
+      - key: PEER_PATH
+        value: /
